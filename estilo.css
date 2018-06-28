@@ -1,0 +1,167 @@
+body{
+	text-align: center;
+
+}
+h1 {font-family: 'Ubuntu', sans-serif;
+	font-size: 60px;
+	color:#354070;
+}
+h2 {color:#354070;
+	font-size: 50px;
+}
+p{  font-family: 'Dosis', sans-serif;
+	font-size: 40px;
+	color: #6E6D6D;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    color: #6E6D6D;
+}
+li {
+    float: left;
+    padding: 14px 16px;
+    color: #6E6D6D;
+}
+
+.imgAnimada:hover{
+	margin-left: 20px;
+}
+
+.subprop{
+	text-align: left;
+	color: #354070
+}
+.ach{
+	width: 500px;
+	float: left;
+}
+.desc{
+	text-align: left;
+	font-size: 30px;
+	margin-top: -20px;
+	margin-left: 20px;
+	color: #6E6D6D;
+}
+
+
+
+.vibrar{
+	animation-name: vibrar;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes vibrar{
+	0%{
+		transform: rotate(-10deg);
+	}
+	50%{
+		transform: rotate(10deg);
+	}
+	100%{
+		transform: rotate(-10deg);
+	}
+}
+.color{
+	animation-name: cambiac;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;	
+}
+@keyframes cambiac{
+	0%{
+		color: pink;
+	}
+	50%{
+		color: blue;
+	}
+	100%{
+		color: pink;
+	}
+}
+.altura{
+	animation-name: altura;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;	
+}
+@keyframes altura{
+	0%{
+		transform: scaleY(1);
+	}
+	50%{
+		transform: scaleY(2);
+	}
+	100%{
+		transform: scaleY(1);
+	}
+}
+
+.fondo{
+	animation-name: fondo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;	
+}
+@keyframes fondo{
+	0%{
+		background-color: pink;
+	}
+	50%{
+		background-color: blue;
+	}
+	100%{
+		background-color: pink;
+	}
+}
+.ancho{
+	animation-name: ancho;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: left;	
+}
+@keyframes ancho{
+	0%{
+		transform: scaleX(1);
+	}
+	50%{
+		transform: scaleX(2);
+	}
+	100%{
+		transform: scaleX(1);
+	}
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade{
+  from {
+    transform: perspective(1000px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(1000px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(1000px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(1000px) scale3d(.95, .95, .95);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(1000px);
+    animation-timing-function: ease-in;
+  }
+}
+
